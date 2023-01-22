@@ -14,10 +14,19 @@ body{
    font-family: 'Noto Serif', serif;
    max-width: 1200px;
    margin: 20px auto;
-   padding: 0 20px;
+   padding: 20px auto;
    max-width: 1200px;
+   background-color: rgb(15, 96, 110);
+
+
+   background :linear-gradient(rgb(15, 96, 110), rgb(15, 96, 110), rgb(15, 96, 110), green, rgb(15, 96, 110));
+
 
 }
+
+body::-webkit-scrollbar {
+    display: none;
+  }
 p,h1,h2,h3,a,ul{
     margin: 0;
     padding: 0;
@@ -38,10 +47,11 @@ nav{
     border-radius: 10px 10px 0 0;
     /* text-transform: uppercase; */
     /* background-color: rgb(70, 58, 58); */
-    box-shadow: 5px 5px 5px 5px rgb(231, 226, 226) ;
+    /* box-shadow: 5px 5px 5px 5px rgb(231, 226, 226) ; */
     display: flex;
     height: 70px;
     width: 100%;
+    background: white;
 }
 .site-title{
     display: flex;
@@ -64,7 +74,7 @@ nav{
     display: flex;
 }
 .left{
-    width: 50%;
+    width: 70%;
     height: 100%;
 }
 .left img{
@@ -72,16 +82,17 @@ nav{
     height: 100%;
     object-fit: cover;
     /* border-radius: 50%; */
-    box-shadow: 1px 5px 5px 5px rgb(231, 226, 226) ;
+    /* box-shadow: 1px 5px 5px 5px rgb(231, 226, 226) ; */
 }
 .logo img{
     height: 50px;
     width: 80%;
 }
 .right{
-    width: 50%;
+    width: 30%;
     height: 100%;
-    box-shadow: 1px 5px 5px 5px rgb(231, 226, 226) ;
+    /* box-shadow: 1px 1px 1px 1px rgb(231, 226, 226) ; */
+    border: 2px solid black;
     margin-left: 1%;
 }
 .logo a{
@@ -115,21 +126,140 @@ nav p,nav a{
     font-weight: 300;
     font-size: 1.2rem;
 }
+
+.services{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: white;
+    margin-top: 10px;
+   margin-bottom: 10px;
+    
+}
+.services span{
+    background-color: #ffa600;
+    color: white;
+    height: 20px;
+    
+}
+.serv{
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:1rem;
+   
+   
+}
+.serv-link{
+    /* box-shadow: 5px 5px 5px 5px rgb(231, 226, 226) ; */
+    text-align: center;
+    border: 1px solid rgb(131, 127, 127);
+
+}
+.serv-link h4{
+    padding-top: 5px;
+}
+.serv-link img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+
+.about{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: white;
+    margin-top: 10px;
+   margin-bottom: 10px;
+    
+}
+.aboutus{
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap:1rem;
+}
+
+.lft{
+width: 100%;
+
+}
+.lft img{
+    width: 100%;
+    height: 100%;
+}
+.rgt{
+    width: 100%;
+ padding-left: 10px;
+ padding-top: 40px;
+    }
+    .rgt h2{
+        padding-bottom: 20px;
+        color: rgb(165, 160, 160);
+        
+    }
+
+    .rgt hr{
+        width: 70%;
+        padding-left: 0;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
 footer{
     color: #777;
-    text-align: center;
-    margin: 80px auto 20px;
-    background-color: #ddd;
+    /* text-align: center; */
+    margin: 30px auto 20px;
+    
+
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+   
+    border-bottom: 3px solid rgb(12, 42, 211);
+    border-radius:  0 0 10px 10px;
+ 
+    display: flex;
     height: 70px;
-    padding-top: 30px;
+    width: 100%;
+   
+    
     /* padding-bottom: 20px; */
 }
+
+footer h3{
+    display: flex;
+    color: #777;
+    text-align: center;
+    padding: 10px;
+    margin-left: 30%;
+    margin-top: 1.5rem;
+
+}
+.h3{
+    
+    padding-right: 10px;
+    width: 50%;
+}
+.h2{
+    width: 50%;
+}
 .right h2{
-    padding-top: 20px;
-    border-bottom: 2px solid black;
+    padding-top: 0px;
+   
     margin-bottom: 10px;
-    width: 79%;
-margin-left: 20px;
+    width: 100%;
+    text-align: center;
+   background-color: #002D52;
+   color: rgba(255, 255, 255, 0.89);
+   height: 60px;
+   padding-top: 10px;
+
 
 }
 .right button{
@@ -138,16 +268,35 @@ margin-left: 20px;
 
 
   margin: 20px;
-  background-color: #ffa500;
-  color: white;
+  background-color: #8D7D4D;
+  color: black;
   padding: 6px;
   border: 0;
   font-size: 1.5rem;
   cursor: pointer;
-  width: 150px;
-  border-radius: 5px;
+  width: 80%;
+  
+ font-weight: 900;
 
 }
+.rgt p{
+    width: 80%;
+    line-height: 30px;
+}
+
+.rgt button{
+   
+  margin-top: 20px;
+  background-color: #8D7D4D;
+  color: black;
+  padding: 6px;
+  border: 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 50%;
+ font-weight: 900; 
+}
+
 .right p,h3{
     padding-left: 20px;
     margin-bottom: 10px;

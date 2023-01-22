@@ -1,4 +1,5 @@
 const express=require('express');
+const morgan=require('morgan');
 
 //express app
 const app=express();
@@ -8,9 +9,10 @@ app.set('view engine','ejs');
 //listen for request
 app.listen(5000);
 
-
+app.use("/img",express.static('img'));
 app.use(express.static('public'));
-
+app.use(express.urlencoded({extended:true}));
+app.use(morgan('dev'))
 
 
 app.get('/',(req,res)=>{

@@ -1,47 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevWeb</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-
-
-    </style>
-</head>
+    <%- include('./patials/head.ejs') %>
 <body>
-    <nav>
-  <div class="site-title">
-    <div class="logo"> <a href="/"><img src="https://user-images.githubusercontent.com/104558335/213319771-268d8abf-34e9-44e2-9c21-da22c0c6c639.png" alt=""></div>
-    <div class="menulink"><ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/service">Services</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="pricing">Pricing</a></li>
-        <li><a href="/review">Review</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><button>Login</button></li>
-        
-    </ul></div>
-
-  </div>
-</nav>
+    <%- include('./patials/nav.ejs') %>
 <div class="body">
     <div class="left"><img src="https://user-images.githubusercontent.com/104558335/200171500-dd3fd695-84ed-48f7-a09e-e261ba3a82dd.png" alt=""></div>
     <div class="right">
-<h2>Welcome to Home Line Development
+<h2>WELCOME TO JD
 
 </h2>
 
 <h3>Grow Your Career With Us</h3>
 <p>Our software engineering services and specialized industry expertise help you deploy next-gen technologies and applications with a focus on quality, scalability, cost-efficiency and rapid delivery</p>
 
-<button>Apply Now</button>
+<button>Start your application</button>
     </div>
 </div>
+
+<div class="services">
+    <h1>Our Popular Services
+    <hr>
+    </h1>
+    
+          </div>
+    <div class="serv">
+    <div class="serv-link"><img src="https://miro.medium.com/max/720/0*2WskF-iTBOvp_cQp" alt="">
+    <h4>Basic and Advanced Web Development Courses 2023</h4>
+    </div>
+    <div class="serv-link"><img src="https://www.upwork.com/catalog-images-resized/2fc4494cff55daa2d4faf3743fd3dd8e/large" alt="">
+    <h4>Professional Graphics Designer Figma 2023</h4>
+    </div>
+    <div class="serv-link"><img src="https://cdn.georgiatechbootcamp.com/wp-content/uploads/sites/95/2019/01/1440_uxui-1140x440.jpg" alt="">
+    <h4>UI/UX For Beginners 2023</h4>
+    </div>
+   
+    
+    
+    </div>
+    <div class="about">
+        <h1>About Us</h1>
+        <hr>
+        </h1>
+        
+              </div>
+
+
+              <div class="aboutus">
+
+                <div class="lft">
+                    <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2019/01/Top-10-Ranking-About-Us-Pages-760x400.webp" alt="">
+                </div>
+            <div class="rgt">
+<h2>Big Projects Start With Big Dreams 
+   
+</h2>
+<hr>
+<p>At Dream Big we seek to empower our clients and provide them a long term high quality IT Consulting and other IT services. Understanding the IT needs of the company and choosing adequate solution can be confusing that I why we provide our clients with maximum transparency and reliability</p>
+
+<button>Show More -></button>
+
+            </div>
+            
+                
+                </div>
+
+
+<%- include('./patials/footer.ejs') %>
+
+
 
 </body>
 </html>
